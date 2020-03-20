@@ -6,7 +6,7 @@
           <v-toolbar absolute flat class="appHeader__toolbar transparent">
             <img
               class="appHeader__logo"
-              src="~assets/images/logo.svg"
+              src="~assets/images/smartprisoners_logo.svg"
               alt="Weekx"
             />
             <v-spacer></v-spacer>
@@ -15,7 +15,7 @@
                 >Github</v-btn
               >
               <v-btn
-                href="mailto:feedback@weekx.xyz?subject=Feedback%20on%20Weekx"
+                href="mailto:smartprisonersgame@gmail.com?subject=Feedback%20on%20SmartPrisoners"
                 flat
                 >Feedbacks</v-btn
               >
@@ -66,10 +66,9 @@ export default {}
   }
 
   &__logo {
-    width: 105px;
+    width: 160px;
     @include responsive(mobile) {
       display: block;
-      width: 105px;
       margin: auto !important;
     }
   }

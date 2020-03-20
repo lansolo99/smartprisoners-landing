@@ -84,6 +84,7 @@ export default {
   /*
    ** Build configuration
    */
+  buildModules: ['@nuxtjs/global-components'],
   build: {
     transpile: ['vuetify/lib'],
     plugins: [new VuetifyLoaderPlugin()],

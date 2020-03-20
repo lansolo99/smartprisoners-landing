@@ -22,6 +22,7 @@ import AppReleases from '@/components/AppReleases.vue'
 import AppFooter from '@/components/AppFooter.vue'
 
 export default {
+  name: 'Page',
   components: {
     AppSpinner,
     AppHeader,

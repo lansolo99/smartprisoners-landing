@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
+    "@nuxtjs/global-components": "^0.6.1",
     "@nuxtjs/style-resources": "^0.1.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.1",
