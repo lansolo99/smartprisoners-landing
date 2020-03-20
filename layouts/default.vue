@@ -12,8 +12,9 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: 'Signika Negative', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Share Tech', sans-serif;
+  font-weight: normal;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 </style>

@@ -3,7 +3,12 @@
     <v-container class="pt-4 pb-0">
       <v-layout>
         <v-flex>
-          <v-toolbar absolute flat class="appHeader__toolbar transparent">
+          <v-toolbar
+            absolute
+            flat
+            color="white"
+            class="appHeader__toolbar transparent"
+          >
             <img
               class="appHeader__logo"
               src="~assets/images/smartprisoners_logo.svg"
@@ -11,10 +16,14 @@
             />
             <v-spacer></v-spacer>
             <v-toolbar-items>
-              <v-btn href="https://github.com/lansolo99/weekx" flat
+              <v-btn
+                color="colorWhite"
+                href="https://github.com/lansolo99/smartprisonersgame"
+                flat
                 >Github</v-btn
               >
               <v-btn
+                color="colorWhite"
                 href="mailto:smartprisonersgame@gmail.com?subject=Feedback%20on%20SmartPrisoners"
                 flat
                 >Feedbacks</v-btn
@@ -59,7 +68,7 @@ export default {}
       }
 
       &:hover {
-        background-color: $color-blue;
+        background-color: $color-red;
         color: white;
       }
     }

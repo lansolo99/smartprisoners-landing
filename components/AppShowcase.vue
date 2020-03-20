@@ -2,7 +2,7 @@
   <section class="appShowCase">
     <div class="appElements">
       <h1 class="appElements__title">
-        Just a simple discipline App
+        PUZZLE GAME IN A HIGH-TECH PRISON
       </h1>
       <div
         class="appElements__phone"
@@ -112,8 +112,9 @@ export default {
     }
 
     &__title {
+      color: white;
       font-size: 3.75rem;
-      font-weight: 600;
+      // font-weight: 600;
       line-height: 4.7rem;
       @include textSelection;
 

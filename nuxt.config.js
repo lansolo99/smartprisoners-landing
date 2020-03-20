@@ -70,7 +70,14 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/axios'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/axios', 'nuxt-webfontloader'],
+
+  webfontloader: {
+    custom: {
+      families: ['Share Tech'],
+      urls: ['https://fonts.googleapis.com/css?family=Share+Tech&display=swap']
+    }
+  },
 
   styleResources: {
     scss: [

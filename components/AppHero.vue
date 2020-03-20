@@ -9,7 +9,7 @@
               ~assets/images/mobile@2x.jpg   768w,
               ~assets/images/desktop@2x.jpg 1440w
             "
-            alt="Weekx theme"
+            alt="SmartPrisoners theme"
           />
         </Parallax>
       </no-ssr>

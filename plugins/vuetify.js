@@ -6,6 +6,7 @@ Vue.use(Vuetify, {
     primary: '#FFA81E',
     primaryLighter: '#FFBA4C',
     secondary: '#00697F',
+    colorWhite: '#FFF',
     colorGreen: '#06D491',
     colorRed: '#E93A4F',
     colorFacebook: '#4267B2',
