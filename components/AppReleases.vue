@@ -89,7 +89,7 @@ export default {
 
     &__title-col {
       a {
-        color: $color-red;
+        color: lighten($color-red, 10%);
       }
       h2 {
         font-size: 22px;

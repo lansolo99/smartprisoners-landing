@@ -34,7 +34,7 @@ export default {}
 
   a {
     transition: color 0.15s;
-    color: lighten($color-red, 20%);
+    color: lighten($color-red, 10%);
     &:hover {
       color: white;
     }

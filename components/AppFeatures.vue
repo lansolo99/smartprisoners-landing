@@ -23,7 +23,7 @@
             />
           </div>
 
-          <h1 class="appFeatures__title">{{ feature.title }}</h1>
+          <h1 class="appFeatures__title" v-html="feature.title"></h1>
           <p class="appFeatures__column-description">
             {{ feature.description }}
           </p>
@@ -34,22 +34,23 @@
 </template>
 
 <script>
+/* eslint-disable vue/no-v-html */
 export default {
   data() {
     return {
       features: [
         {
-          title: 'Unlock 10 doors',
+          title: '<span>Unlock</span> 10 doors',
           description:
             'Make your way accross the prison, from your cell to the freedom station.'
         },
         {
-          title: 'Resolve 13 games',
+          title: '<span>Resolve</span> 13 games',
           description:
             'Unlock each door by solving small logic puzzles with increasing difficulty.'
         },
         {
-          title: 'EXPLORE THE PRISON',
+          title: '<span>EXPLORE</span> THE PRISON',
           description:
             'Discover stunning environments in a strange high-tech atmosphere.'
         }
@@ -68,6 +69,9 @@ export default {
   @include textSelection;
   &__title {
     text-transform: uppercase;
+    span {
+      color: lighten($color-red, 10%);
+    }
   }
 
   &__column {
