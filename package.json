@@ -1,7 +1,7 @@
 {
-  "name": "smartprisonerslandingpage",
+  "name": "weekxlandingpage",
   "version": "1.0.0",
-  "description": "Smart Prisoners landing page",
+  "description": "Weekx landing page",
   "author": "Stephane Changarnier",
   "private": true,
   "scripts": {
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.4.1",
+    "caniuse-lite": "^1.0.30001035",
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
     "nuxt-webfontloader": "^1.1.0",
@@ -23,7 +24,6 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
-    "@nuxtjs/global-components": "^0.6.1",
     "@nuxtjs/style-resources": "^0.1.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.1",

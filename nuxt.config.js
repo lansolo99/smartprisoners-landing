@@ -41,9 +41,9 @@ export default {
       }
     ]
   },
-  router: {
-    base: '/app/'
-  },
+  // router: {
+  //   base: '/app/'
+  // },
   /*
    ** Customize the progress-bar color
    */

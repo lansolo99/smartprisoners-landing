@@ -2,66 +2,62 @@
   <section class="appShowCase">
     <div class="appElements">
       <h1 class="appElements__title">
-        PUZZLE GAME IN A HIGH-TECH PRISON
+        PUZZLE GAME IN A <span class="u-group-word">HIGH-TECH</span> PRISON
       </h1>
       <div
         class="appElements__phone"
         :class="{ videoPlay: videoPlay }"
         @click="playTheVid"
       >
+        <!-- Mockup backup -->
         <img
-          src="~assets/images/phone_back.svg"
+          src="~assets/images/phone_body.svg"
           class="appElements__phone-mockup appElements__phone-mockup--back"
         />
-        <video
-          src="~assets/images/screencast.mp4"
-          width="239"
-          height="490"
-          preload
-          playsinline
-          muted
-          loop
-          type="video/mp4"
-        />
-        <div v-if="!videoPlay" class="appElements__beforePlayPreview">
-          <img
-            src="~assets/images/screencast_preview.jpg"
-            srcset="
-              ~assets/images/screencast_preview.jpg    1x,
-              ~assets/images/screencast_preview@2x.jpg 2x
-            "
-            alt="weekx screencast preview"
-          />
-        </div>
-        <div v-if="!videoPlay" class="appElements__beforePlayLayer"></div>
 
+        <!-- Screenshot -->
+        <img
+          src="~assets/images/screenshot.jpg"
+          srcset="
+            ~assets/images/screenshot.jpg    1x,
+            ~assets/images/screenshot@2x.jpg 2x
+          "
+          class="appElements__phone-mockup appElements__phone-mockup--screenshot"
+        />
+
+        <!-- Mockup front -->
         <img
           src="~assets/images/phone_body.svg"
           class="appElements__phone-mockup appElements__phone-mockup--front"
         />
-
+        <!-- Play -->
         <img
-          v-if="!videoPlay"
           class="appElements__beforePlayBtn"
           src="~assets/images/phone_play.svg"
         />
       </div>
       <div class="appElements__description">
         <p>
-          Weekx is a weekly task planner web app focused on self-improvement.
-          It’s made for people who want to track their discipline commitment.
-          Set tasks, define schedules, check when it’s done, track your
-          progression.
+          Year 2086. You are detained in a high security prison for smart
+          prisoners. You are then eligible to liberate yourself by solving
+          challenging puzzles. You will be facing mental challenges to unlock 10
+          doors to exit the prison.
         </p>
-        <p>
-          Keep up with a high discipline level everyday!
-        </p>
+        <ul>
+          <li>Resolve 13 mental challenges</li>
+          <li>Unlock 10 doors</li>
+          <li>Cross stunning environments through immersive transitions</li>
+          <li>Track your time and progression</li>
+          <li>Rank among the best prisoners</li>
+        </ul>
       </div>
       <div class="appElements__btn-pwa">
         <a href="http://app.weekx.xyz">
-          <img src="~assets/images/btn-pwa.svg" alt="pwa button" />
+          <img
+            src="~assets/images/google-play-badge.svg"
+            alt="Google Play Badge"
+          />
         </a>
-        <p class="appElements__btn-pwa-legend">Best viewed on mobile devices</p>
       </div>
     </div>
   </section>
@@ -91,14 +87,14 @@ export default {
 
 <style lang="scss">
 .appShowCase {
-  background-color: $color-golden;
-  padding-bottom: 40px;
+  background-color: $color-anthracite-blue;
+  padding-bottom: 100px;
 
   .appElements {
     margin: auto;
     display: block;
     text-align: center;
-    width: 500px;
+    width: 600px;
     position: relative;
     margin: auto;
     margin-top: 80px;
@@ -113,8 +109,8 @@ export default {
 
     &__title {
       color: white;
+      // color: $color-white-iced;
       font-size: 3.75rem;
-      // font-weight: 600;
       line-height: 4.7rem;
       @include textSelection;
 
@@ -126,9 +122,9 @@ export default {
     &__phone {
       position: relative;
       margin: auto;
-      margin-top: 70px;
-      width: 265px;
-      height: 541px;
+      margin-top: 300px;
+      width: 530px;
+      height: 260px;
       cursor: pointer;
 
       &.videoPlay {
@@ -146,23 +142,18 @@ export default {
         margin-top: 60px;
       }
 
-      video {
-        position: relative;
-        top: 46px;
-        // left: 0px;
-        // width: 238px;
-        // height: 489px;
-
-        left: -1px;
-        width: 239px;
-        height: 490px;
-      }
       &-mockup {
         display: block;
         position: absolute;
-        width: 265px;
+        width: 530px;
         top: 0;
         left: 0;
+        &--screenshot {
+          width: 486px;
+          height: 240px;
+          top: 11px;
+          left: 11px;
+        }
         &--back {
           filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
         }
@@ -203,9 +194,10 @@ export default {
     }
 
     &__description {
-      margin-top: 50px;
+      text-align: left;
+      margin-top: 100px;
       font-weight: 300;
-      font-size: 20px;
+      font-size: 23px;
       @include textSelection;
     }
     &__btn-pwa {
@@ -216,7 +208,7 @@ export default {
         display: block;
         margin: auto;
         width: 170px;
-        padding-top: 40px;
+        padding-top: 80px;
         img {
           &:hover {
             transform: scale(1.05);

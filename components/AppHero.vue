@@ -38,7 +38,7 @@ export default {
   display: block;
   width: 100%;
   height: 820px;
-  background-color: $color-golden;
+  background-color: $color-anthracite-blue;
 
   // Parallaxy
 

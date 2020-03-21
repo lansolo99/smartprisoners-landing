@@ -24,7 +24,7 @@ export default {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background: $color-anthracite;
+  background: $color-anthracite-blue;
   z-index: 100;
 }
 </style>

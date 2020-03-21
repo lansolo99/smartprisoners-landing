@@ -1,9 +1,9 @@
 html {
-  background-color: $color-golden !important;
+  background-color: $color-anthracite-blue !important;
 }
 
 body {
-  background-color: $color-golden !important;
+  background-color: $color-anthracite-blue !important;
   border-top: 8px solid $color-red;
 }
 h1{
@@ -16,4 +16,16 @@ h6 {
 
 a {
   text-decoration: none;
+}
+
+.u-break-all {
+  word-break: break-all;
+}
+
+.u-break-word {
+  word-wrap: break-word;
+}
+
+.u-group-word {
+  white-space: nowrap;
 }

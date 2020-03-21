@@ -14,6 +14,7 @@ export default {
 #app {
   font-family: 'Share Tech', sans-serif;
   font-weight: normal;
+  color: $color-white-iced;
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
 }
