@@ -22,7 +22,7 @@
               :alt="feature.title"
             />
           </div>
-
+          <!-- eslint-disable-next-line vue/no-v-html -->
           <h1 class="appFeatures__title" v-html="feature.title"></h1>
           <p class="appFeatures__column-description">
             {{ feature.description }}

@@ -54,7 +54,6 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  // plugins: ['@/plugins/vuetify'],
   plugins: [
     '@/plugins/vuetify',
     // {
@@ -92,6 +91,7 @@ export default {
    */
   buildModules: ['@nuxtjs/global-components'],
   build: {
+    analyze: true,
     transpile: ['vuetify/lib'],
     plugins: [new VuetifyLoaderPlugin()],
     loaders: {
