@@ -61,7 +61,7 @@ export default {
   }
   .hero {
     position: relative;
-    background-color: $color-golden;
+    background-color: $color-anthracite-blue;
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
   }
 }

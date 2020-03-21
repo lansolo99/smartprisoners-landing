@@ -2,12 +2,13 @@
   <section class="appShowCase">
     <div class="appElements">
       <h1 class="appElements__title">
-        PUZZLE GAME IN A <span class="u-group-word">HIGH-TECH</span> PRISON
+        PUZZLE GAME IN A
+        <span class="u-group-word">HIGH-TECH</span> PRISON
       </h1>
       <div
         class="appElements__phone"
         :class="{ videoPlay: videoPlay }"
-        @click="playTheVid"
+        @click.stop="dialog = true"
       >
         <!-- Mockup backup -->
         <img
@@ -30,11 +31,16 @@
           src="~assets/images/phone_body.svg"
           class="appElements__phone-mockup appElements__phone-mockup--front"
         />
+
         <!-- Play -->
         <img
           class="appElements__beforePlayBtn"
           src="~assets/images/phone_play.svg"
+          @click.stop="dialog = true"
         />
+
+        <!-- Dialog -->
+        <AppTeaserDialog :set-dialog="dialog" @closeDialog="dialog = false" />
       </div>
       <div class="appElements__description">
         <p>
@@ -64,22 +70,15 @@
 </template>
 
 <script>
+import AppTeaserDialog from '@/components/AppTeaserDialog.vue'
 export default {
-  components: {},
+  components: {
+    AppTeaserDialog
+  },
   data() {
     return {
+      dialog: false,
       videoPlay: false
-    }
-  },
-  methods: {
-    playTheVid() {
-      // Remove beforePlayLayer
-      this.videoPlay = true
-
-      // Play video
-      const media = document.querySelector('video')
-      media.loop = true
-      media.play()
     }
   }
 }
@@ -172,7 +171,7 @@ export default {
     }
 
     &__beforePlayLayer {
-      background-color: $color-golden;
+      background-color: $color-anthracite-blue;
       opacity: 0.4;
       background-blend-mode: lighten;
       position: absolute;
@@ -180,17 +179,6 @@ export default {
       left: 13px;
       width: 238px;
       height: 489px;
-    }
-
-    &__beforePlayBtn {
-      position: absolute;
-      width: 67px;
-      height: 67px;
-      top: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      left: 50%;
-      filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.3));
-      transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     &__description {
@@ -221,6 +209,16 @@ export default {
         font-style: italic;
         margin-bottom: 0;
       }
+    }
+    &__beforePlayBtn {
+      position: absolute;
+      width: 67px;
+      height: 67px;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      left: 50%;
+      filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.3));
+      transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
   }
 }

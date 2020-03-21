@@ -33,11 +33,6 @@ export default {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600'
       }
     ]
   },
@@ -62,6 +57,10 @@ export default {
   // plugins: ['@/plugins/vuetify'],
   plugins: [
     '@/plugins/vuetify',
+    // {
+    //   src: '~plugins/vue-youtube.js',
+    //   ssr: false
+    // },
     {
       src: '~plugins/vue-parallaxy.js',
       ssr: false

@@ -11,6 +11,7 @@ Vue.use(Vuetify, {
     colorRed: '#E93A4F',
     colorFacebook: '#4267B2',
     colorMatterhorn: '#4A3642',
+    colorAnthraciteBlue: '#0F192A',
     colorGoogle: '#4285F4',
     accent: '#56E39F',
     error: '#FF5252',
