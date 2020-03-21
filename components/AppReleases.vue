@@ -65,11 +65,11 @@ export default {
 .appReleases {
   text-align: center;
   position: relative;
-  background-color: $color-blue;
+  background-color: $color-anthracite-lighter;
   padding: 40px 0px 70px;
 
   &__title {
-    color: $color-golden;
+    color: $color-white-iced;
     font-size: 30px;
     font-weight: 400;
   }
@@ -89,7 +89,7 @@ export default {
 
     &__title-col {
       a {
-        color: $color-green;
+        color: $color-red;
       }
       h2 {
         font-size: 22px;
@@ -116,7 +116,7 @@ export default {
       display: block;
       width: 5px;
       height: 22px;
-      background-color: $color-green;
+      background-color: $color-white-iced;
       position: absolute;
       top: 30px;
       left: 0;

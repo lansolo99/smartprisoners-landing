@@ -3,12 +3,12 @@
     <v-container class="py-2">
       <v-layout>
         <v-flex xs12>
-          <span class="appFooter__year">© 2019</span> -
+          <span class="appFooter__year">© 2020</span> -
           <a href="http://fr.linkedin.com/in/stephanechangarnier"
             >Stephane Changarnier</a
           >
           -
-          <a href="https://lansolo.io">lansolo.io</a>
+          <a href="https://lansolo.dev">lansolo.dev</a>
         </v-flex>
       </v-layout>
     </v-container>
@@ -24,7 +24,7 @@ export default {}
   text-align: center;
   color: white;
   font-size: 14px;
-  background-color: $color-matterhorn;
+  background-color: $color-anthracite-blue-alt;
 
   a,
   &__year {
@@ -34,6 +34,7 @@ export default {}
 
   a {
     transition: color 0.15s;
+    color: lighten($color-red, 20%);
     &:hover {
       color: white;
     }
