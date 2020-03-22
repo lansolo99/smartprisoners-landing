@@ -15,9 +15,7 @@
           >
             <v-layout>
               <v-flex xs11 class="release__title-col">
-                <a
-                  href="https://github.com/lansolo99/weekx-landing-page/releases/tag/v.1.0-alpha"
-                  target="blank"
+                <a href="#" target="blank"
                   ><h2>{{ release.title }}</h2></a
                 >
               </v-flex>

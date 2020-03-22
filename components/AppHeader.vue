@@ -12,7 +12,7 @@
             <img
               class="appHeader__logo"
               src="~assets/images/smartprisoners_logo.svg"
-              alt="Weekx"
+              alt="Smart Prisoners logo"
             />
             <v-spacer></v-spacer>
             <v-toolbar-items>

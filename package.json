@@ -1,7 +1,7 @@
 {
-  "name": "weekxlandingpage",
+  "name": "smartprisonerslandingpage",
   "version": "1.0.0",
-  "description": "Weekx landing page",
+  "description": "Smart Prisoners, a puzzle game in a high-tech prison",
   "author": "Stephane Changarnier",
   "private": true,
   "scripts": {

@@ -1,6 +1,6 @@
-# weekx
+# Smart Prisoners
 
-> Weekx Landing page
+> Smart Prisoners Landing page
 
 ## Build Setup
 

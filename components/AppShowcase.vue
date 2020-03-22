@@ -63,7 +63,7 @@
         </ul>
       </div>
       <div class="appElements__btn-pwa">
-        <a href="http://app.weekx.xyz">
+        <a href="#">
           <img
             src="~assets/images/google-play-badge.svg"
             alt="Google Play Badge"
