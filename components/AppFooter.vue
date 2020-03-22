@@ -3,7 +3,7 @@
     <v-container class="py-2">
       <v-layout>
         <v-flex xs12>
-          <span class="appFooter__year">© 2020</span> -
+          <span class="appFooter__year">© {{ currentDate }}</span> -
           <a href="http://fr.linkedin.com/in/stephanechangarnier"
             >Stephane Changarnier</a
           >
@@ -16,7 +16,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      currentDate: new Date().getFullYear()
+    }
+  }
+}
 </script>
 
 <style lang="scss">
