@@ -41,7 +41,6 @@ export default {
   background-color: $color-anthracite-blue;
 
   // Parallaxy
-
   @media screen and (min-width: 768px) {
     .Masthead {
       height: 800px !important;

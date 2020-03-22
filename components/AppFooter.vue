@@ -30,6 +30,9 @@ export default {}
   &__year {
     display: inline-block;
     margin: 0 10px;
+    @include responsive(mobile) {
+      display: block;
+    }
   }
 
   a {

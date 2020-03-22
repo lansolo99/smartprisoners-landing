@@ -67,6 +67,13 @@ export default {
   padding-top: 20px;
   padding-bottom: 60px;
   @include textSelection;
+
+  .container {
+    @media screen and (max-width: 959px) {
+      max-width: 400px;
+    }
+  }
+
   &__title {
     text-transform: uppercase;
     span {
@@ -86,15 +93,21 @@ export default {
       font-size: 25px;
       left: 33px;
       font-weight: 500;
+      @media screen and (max-width: 959px) {
+        margin-top: 20px;
+      }
     }
     &-description {
-      @include responsive(tablet) {
-        max-width: 500px;
-      }
       margin: auto;
       margin-top: 20px;
       font-weight: 300;
       font-size: 18px;
+      @include responsive(tablet) {
+        max-width: 500px;
+      }
+      @media screen and (max-width: 959px) {
+        margin-top: 0;
+      }
     }
   }
 

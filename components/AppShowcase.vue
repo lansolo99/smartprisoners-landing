@@ -33,13 +33,13 @@
         />
 
         <!-- Play -->
-        <!-- <img
+        <img
           class="appElements__beforePlayBtn"
           src="~assets/images/phone_play.svg"
           @click.stop="dialog = true"
-        />-->
+        />
 
-        <!-- Dialog -->
+        <!-- Video dialog -->
         <AppTeaserDialog :set-dialog="dialog" @closeDialog="dialog = false" />
       </div>
       <div class="appElements__description">
@@ -130,7 +130,7 @@ export default {
         margin-top: 70px;
         width: 100%;
         height: auto;
-        padding-bottom: 40%;
+        padding-bottom: 50%;
       }
 
       @include responsive(mobile) {
@@ -160,7 +160,7 @@ export default {
           top: 11px;
           left: 11px;
 
-          @include responsive(tablet) {
+          @media screen and (max-width: 768px) {
             width: 92% !important;
             height: auto !important;
             top: 4%;
@@ -205,6 +205,10 @@ export default {
       margin-top: 100px;
       font-weight: 300;
       font-size: 23px;
+      @include responsive(mobile) {
+        margin-top: 60px;
+        font-size: 20px;
+      }
       @include textSelection;
     }
     &__btn-pwa {
@@ -216,6 +220,11 @@ export default {
         margin: auto;
         width: 170px;
         padding-top: 80px;
+        @include responsive(tablet) {
+          padding-top: 40px;
+          margin: 0;
+        }
+
         img {
           &:hover {
             transform: scale(1.05);
@@ -238,6 +247,10 @@ export default {
       left: 50%;
       filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.3));
       transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      @include responsive(mobile) {
+        width: 12vw;
+        height: 12vw;
+      }
     }
   }
 }
