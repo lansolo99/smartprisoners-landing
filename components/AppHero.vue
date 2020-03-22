@@ -5,9 +5,8 @@
         <Parallax :speed-factor="0.6">
           <img
             src="~assets/images/desktop@2x.jpg"
-            srcset="
-              ~assets/images/mobile@2x.jpg   768w,
-              ~assets/images/desktop@2x.jpg 1440w
+            :srcset="
+              `${require(`~/assets/images/mobile@2x.jpg`)} 768w, ${require(`~/assets/images/desktop@2x.jpg`)} 1440w`
             "
             alt="SmartPrisoners theme"
           />
@@ -62,6 +61,23 @@ export default {
     position: relative;
     background-color: $color-anthracite-blue;
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  }
+}
+
+[data-src] {
+  opacity: 0;
+  transition: opacity 200ms;
+  img {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+}
+.lazyLoad.isLoaded,
+.lazyLoad[data-src=''],
+svg[data-src] {
+  opacity: 1;
+  img {
+    opacity: 1;
   }
 }
 </style>

@@ -51,9 +51,7 @@ export default {
           href: '/favicon.ico'
         },
         {
-          rel: 'stylesheet',
-          href:
-            'https://fonts.googleapis.com/css?family=Signika+Negative:300,400,500,600'
+          rel: 'stylesheet'
         }
       ]
     }

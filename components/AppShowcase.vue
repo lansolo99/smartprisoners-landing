@@ -19,12 +19,17 @@
         <!-- Screenshot -->
         <img
           src="~assets/images/screenshot.jpg"
+          :srcset="`${require(`~/assets/images/screenshot@2x.jpg`)} 2x`"
+          class="appElements__phone-mockup appElements__phone-mockup--screenshot"
+        />
+        <!-- <img
+          src="~assets/images/screenshot.jpg"
           srcset="
             ~assets/images/screenshot.jpg    1x,
             ~assets/images/screenshot@2x.jpg 2x
           "
           class="appElements__phone-mockup appElements__phone-mockup--screenshot"
-        />
+        /> -->
 
         <!-- Mockup front -->
         <img
@@ -89,6 +94,10 @@ export default {
   background-color: $color-anthracite-blue;
   padding-bottom: 100px;
 
+  @include responsive(mobile) {
+    padding-bottom: 50px;
+  }
+
   .appElements {
     margin: auto;
     display: block;
@@ -108,7 +117,6 @@ export default {
 
     &__title {
       color: white;
-      // color: $color-white-iced;
       font-size: 3.75rem;
       line-height: 4.7rem;
       @include textSelection;

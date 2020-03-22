@@ -2,8 +2,6 @@
   <div>
     <v-dialog
       v-model="dialog"
-      overlay-color="#ff0000"
-      :overlay-opacity="40"
       :width="imageHeight === 'sm' ? '100%' : 640"
       class="dialog"
       color="colorAnthraciteBlue"
@@ -60,9 +58,6 @@ export default {
         this.$emit('closeDialog')
       }
     }
-  },
-  mounted() {
-    console.log(this.$vuetify.breakpoint)
   }
 }
 </script>
