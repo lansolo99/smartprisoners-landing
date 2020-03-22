@@ -78,6 +78,7 @@ export default {}
     width: 160px;
     @include responsive(mobile) {
       display: block;
+      width: 180px;
       margin: auto !important;
     }
   }

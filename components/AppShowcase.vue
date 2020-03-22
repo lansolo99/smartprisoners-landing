@@ -33,11 +33,11 @@
         />
 
         <!-- Play -->
-        <img
+        <!-- <img
           class="appElements__beforePlayBtn"
           src="~assets/images/phone_play.svg"
           @click.stop="dialog = true"
-        />
+        />-->
 
         <!-- Dialog -->
         <AppTeaserDialog :set-dialog="dialog" @closeDialog="dialog = false" />
@@ -126,6 +126,17 @@ export default {
       height: 260px;
       cursor: pointer;
 
+      @media screen and (max-width: 768px) {
+        margin-top: 70px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 40%;
+      }
+
+      @include responsive(mobile) {
+        margin-top: 120px;
+      }
+
       &.videoPlay {
         cursor: default;
       }
@@ -135,10 +146,6 @@ export default {
           transform-origin: center;
           transform: translateY(-50%) translateX(-50%) scale(1.1);
         }
-      }
-
-      @include responsive(mobile) {
-        margin-top: 60px;
       }
 
       &-mockup {
@@ -152,9 +159,21 @@ export default {
           height: 240px;
           top: 11px;
           left: 11px;
+
+          @include responsive(tablet) {
+            width: 92% !important;
+            height: auto !important;
+            top: 4%;
+            left: 2%;
+          }
         }
         &--back {
           filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
         }
       }
     }
