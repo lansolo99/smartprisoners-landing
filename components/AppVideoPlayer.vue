@@ -38,7 +38,7 @@ export default {
       videoCover: true,
       displayVideo: false,
       displayLoading: false,
-      videoId: 'yTuhzU7KS7Q'
+      videoId: 'GkJdB7JL7gI'
     }
   },
   mounted() {
