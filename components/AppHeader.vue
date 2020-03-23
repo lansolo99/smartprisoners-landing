@@ -18,7 +18,7 @@
             <v-toolbar-items>
               <v-btn
                 color="colorWhite"
-                href="https://github.com/lansolo99/smartprisonersgame"
+                href="https://github.com/lansolo99/smartprisoners-game"
                 flat
                 >Github</v-btn
               >
