@@ -2,12 +2,24 @@
   <div>
     <v-dialog
       v-model="dialog"
-      :width="imageHeight === 'sm' ? '100%' : 640"
+      :width="imageHeight === 'mobile' ? '90%' : 940"
       class="dialog"
       color="colorAnthraciteBlue"
     >
       <v-card class="dialog__content">
         <AppVideoPlayer v-if="dialog" />
+        <!-- Close -->
+        <svg
+          class="close"
+          role="button"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 329 329"
+          @click="$emit('closeDialog')"
+        >
+          <path
+            d="M194.6 164.8L322.7 36.7c8.3-8.3 8.3-21.8 0-30.1s-21.8-8.3-30.1 0l-128.1 128L36.4 6.5c-8.3-8.3-21.8-8.3-30.1 0s-8.3 21.8 0 30.1l128.1 128.1L6.3 292.9c-8.3 8.3-8.3 21.8 0 30.1 4.2 4.2 9.6 6.2 15.1 6.2s10.9-2.1 15.1-6.2l128.1-128.1 128 128.1c4.2 4.2 9.6 6.2 15.1 6.2s10.9-2.1 15.1-6.2c8.3-8.3 8.3-21.8 0-30.1L194.6 164.8z"
+          />
+        </svg>
       </v-card>
     </v-dialog>
   </div>
@@ -36,9 +48,9 @@ export default {
     imageHeight() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
-          return 'xs'
+          return 'mobile'
         case 'sm':
-          return 'sm'
+          return 'mobile'
         case 'md':
           return 'md'
         case 'lg':
@@ -70,14 +82,37 @@ export default {
 .v-overlay--active:before {
   opacity: 0.8;
 }
+.v-dialog {
+  overflow: visible;
+}
 </style>
 
 <style lang="scss" scoped>
+.close {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  path {
+    fill: white;
+  }
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
 .dialog {
+  position: relative;
+
   &__content {
     background: $color-anthracite-blue;
-    width: 640px;
-    height: 360px;
+    width: 940px;
+    height: 530px;
+    // width: 640px;
+    // height: 360px;
 
     @include responsive(tablet) {
       width: 100%;
