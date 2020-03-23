@@ -4,11 +4,13 @@
       v-model="dialog"
       :width="imageHeight === 'mobile' ? '90%' : 940"
       class="dialog"
+      content-class="customdialog"
       color="colorAnthraciteBlue"
     >
       <v-card class="dialog__content">
         <AppVideoPlayer v-if="dialog" />
         <!-- Close -->
+
         <svg
           class="close"
           role="button"
@@ -82,7 +84,7 @@ export default {
 .v-overlay--active:before {
   opacity: 0.8;
 }
-.v-dialog {
+.customdialog {
   overflow: visible;
 }
 </style>
@@ -105,12 +107,15 @@ export default {
 }
 
 .dialog {
+  overflow: visible;
   position: relative;
 
   &__content {
     background: $color-anthracite-blue;
     width: 940px;
-    height: 530px;
+    height: 528px;
+    // height: 530px;
+
     // width: 640px;
     // height: 360px;
 
