@@ -79,13 +79,18 @@ export default {
 <style lang="scss">
 // Because vuetify sucks
 .v-overlay:before {
-  background-color: rgba($color-anthracite-blue, 1);
+  background-color: rgba($color-anthracite-blue, 1) !important;
 }
 .v-overlay--active:before {
-  opacity: 0.8;
+  opacity: 0.8 !important;
 }
-.customdialog {
-  overflow: visible;
+.v-dialog.customdialog {
+  overflow: visible !important;
+  overflow-y: none !important;
+}
+
+.dialog__content.theme--light.v-sheet {
+  background: $color-anthracite-blue !important;
 }
 </style>
 
