@@ -15,7 +15,9 @@
           >
             <v-layout>
               <v-flex xs11 class="release__title-col">
-                <a href="#" target="blank"
+                <a
+                  href="https://github.com/lansolo99/smartprisoners-game"
+                  target="blank"
                   ><h2>{{ release.title }}</h2></a
                 >
               </v-flex>
@@ -45,12 +47,12 @@ export default {
     return {
       releases: [
         {
-          title: 'v1.0-alpha',
-          date: '29 apr 2019',
+          title: 'v1.0',
+          date: '4 apr 2020',
           changelog: [
-            { item: "Added ellipsis to long task's name" },
-            { item: 'Kill all notifications at midnight' },
-            { item: 'Better push notification subscription management' }
+            { item: 'Set Firebase production database' },
+            { item: 'Set beta Cordova release to 10029' },
+            { item: 'Fix Android 9 Google-sign-in crashes' }
           ]
         }
       ]

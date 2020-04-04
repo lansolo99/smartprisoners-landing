@@ -96,7 +96,7 @@ export default {
    */
   buildModules: ['@nuxtjs/global-components'],
   build: {
-    analyze: true,
+    // analyze: true,
     transpile: ['vuetify/lib'],
     plugins: [new VuetifyLoaderPlugin()],
     loaders: {

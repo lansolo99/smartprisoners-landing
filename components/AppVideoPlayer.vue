@@ -9,6 +9,7 @@
         resize
         :resize-delay="300"
         :fit-parent="true"
+        :player-vars="playerVars"
         @ready="youtubeReady"
       />
       <transition name="videoCover">
@@ -38,7 +39,11 @@ export default {
       videoCover: true,
       displayVideo: false,
       displayLoading: false,
-      videoId: 'GkJdB7JL7gI'
+      videoId: 'GkJdB7JL7gI',
+      playerVars: {
+        rel: 1,
+        showinfo: 0
+      }
     }
   },
   mounted() {
