@@ -72,7 +72,8 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/axios',
     'nuxt-webfontloader',
-    'nuxt-lazy-load'
+    'nuxt-lazy-load',
+    '@nuxtjs/markdownit'
   ],
 
   webfontloader: {
