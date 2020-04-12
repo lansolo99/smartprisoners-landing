@@ -22,14 +22,6 @@
           :srcset="`${require(`~/assets/images/screenshot@2x.jpg`)} 2x`"
           class="appElements__phone-mockup appElements__phone-mockup--screenshot"
         />
-        <!-- <img
-          src="~assets/images/screenshot.jpg"
-          srcset="
-            ~assets/images/screenshot.jpg    1x,
-            ~assets/images/screenshot@2x.jpg 2x
-          "
-          class="appElements__phone-mockup appElements__phone-mockup--screenshot"
-        /> -->
 
         <!-- Mockup front -->
         <img
@@ -63,7 +55,9 @@
         </ul>
       </div>
       <div class="appElements__btn-pwa">
-        <a href="#">
+        <a
+          href="https://play.google.com/store/apps/details?id=io.cordova.smartprisoners"
+        >
           <img
             src="~assets/images/google-play-badge.svg"
             alt="Google Play Badge"
